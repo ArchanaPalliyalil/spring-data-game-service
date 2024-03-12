@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.com">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>game Details</h1>
+<hr/>
+<div>
+<h3 th:text="${game.name}"></h3>
+<p>Publisher : <span th:text="${game.publisher}"></span></p>
+<p>Rating : <span th:text="${game.rating}"></span></p>
+<p>Price : <span th:text="${game.price}"></span></p>
+
+</div>
+</body>
+</html>

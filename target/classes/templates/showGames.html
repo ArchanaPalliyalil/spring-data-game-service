@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.com">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+</head>
+
+<!--  --><body>
+
+	showing the games
+
+	<body>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>name</th>
+					<th>publisher</th>
+					<th>rating</th>
+					<th>price</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr th:each="game: ${games}">
+					<td th:text="${game.id}"></td>
+					<td th:text="${game.name}"></td>
+					<td th:text="${game.publisher}"></td>
+					<td th:text="${game.rating}"></td>
+					<td th:text="${game.price}"></td>
+					<td>
+					<a th:href="@{delete-game(id=${game.id})}">Delete</a>
+					<a th:href="@{edit-game(id=${game.id})}">Edit</a>
+					
+					</td>
+				</tr>
+				
+				
+			</tbody>
+		</table>
+
+
+
+
+	</body>
+
+
+
+<!--  --></body>
+
+</html>

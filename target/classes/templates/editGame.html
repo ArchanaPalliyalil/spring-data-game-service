@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.com">
+
+<head>
+<meta charset="UTF-8">
+<title>Edit Game</title>
+</head>
+<body>
+Edit the game
+<form method="POST" th:object="${game}" th:action="@{submit-edit-game}">
+	
+	Id:   <input name="id" th:type="hidden" th:field="*{id}"/> <BR>
+	Name: <input name="name" th:type="text" th:field="*{name}"/> <BR>
+	Publisher: <input name="publisher" th:type="text" th:field="*{publisher}"/><BR>
+	Rating: <input name="rating" th:type="number" th:field="*{rating}"/><BR>
+	Price: <input name="price" th:type="number" th:field="*{price}"/><BR>
+	
+	
+	<input type="submit" value="Edit the game"/>
+</form></body>
+</html>

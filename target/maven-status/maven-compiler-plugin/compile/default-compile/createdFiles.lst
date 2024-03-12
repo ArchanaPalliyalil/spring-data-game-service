@@ -1,0 +1,6 @@
+com/fdmgroup/springdata/controller/GameController.class
+com/fdmgroup/springdata/model/Game.class
+com/fdmgroup/springdata/LoadDatabase.class
+com/fdmgroup/springdata/SpringDataApplication.class
+com/fdmgroup/springdata/repository/GameRepository.class
+com/fdmgroup/springdata/service/GameService.class

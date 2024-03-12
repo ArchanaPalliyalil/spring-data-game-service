@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.com">
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+Add the game:
+
+<form method="POST" th:object="${game}" th:action="@{submit-new-game}">
+	
+	Id:   <input name="id" th:type="number" th:field="*{id}"/> <BR>
+	Name: <input name="name" th:type="text" th:field="*{name}"/> <BR>
+	Publisher: <input name="publisher" th:type="text" th:field="*{publisher}"/><BR>
+	Rating: <input name="rating" th:type="number" th:field="*{rating}"/><BR>
+	Price: <input name="price" th:type="number" th:field="*{price}"/><BR>
+	
+	
+	<input type="submit" value="Add the game"/>
+</form>
+
+
+</body>
+</html>
